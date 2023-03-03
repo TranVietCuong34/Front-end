@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab4</title>
+    <script src="js/jquery-3.6.3.min.js"></script>
+</head>
+<body>
+    <fieldset style="width:300px; margin:auto;">
+        <legend>set attribute</legend>
+        <input type="text" class="txt"> 
+        <input type="button" id="btn" value="Click">
+        <h1 class="show"></h1>
+    </fieldset>
+    <script>
+        $(document).ready(function(){
+            //---
+            //bắt sự kiện click của id=btn
+            $("#btn").click(function(){
+                //lấy giá trị của class=txt
+                var str = $(".txt").val();
+                if(str == ""){
+                    //tác động vào thuộc tính style của class=txt
+                    $(".txt").attr("style","border:1px solid red;");
+                }else{
+                    //tác động vào class=txt, remove thuộc tính style
+                    $(".txt").removeAttr("style");
+                    //hiển thị giá trị vào class=show
+                    $(".show").text(str);
+                }
+            });
+            //---
+            
+        });
+    </script>
+</body>
+</html>

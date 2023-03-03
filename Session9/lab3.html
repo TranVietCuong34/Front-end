@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab3</title>
+    <script src="js/jquery-3.6.3.min.js"></script>
+</head>
+<body>
+    <fieldset style="width:300px; margin:auto;">
+        <legend>Jquery</legend>
+        <table cellpadding="5">
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" id="login" value="login"></td>
+            </tr>
+        </table>
+        <h1 id="show"></h1>
+    </fieldset>
+    <script>
+        $(document).ready(function(){
+            //bắt sự kiện click của id=login
+            $("#login").click(function(){
+                //lấy giá trị của id=email
+                let str_email = $("#email").val();
+                //lấy giá trị của id=password
+                var str_password = $("#email").val();
+                if(str_email != "" && str_password != ""){
+                    //xuất giá trị ra id=show
+                    $("#show").html("Email: " + str_email + " <br> Password: " + str_password);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

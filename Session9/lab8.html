@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab8</title>
+    <script src="js/jquery-3.6.3.min.js"></script>
+</head>
+<body>
+    <div class="slide">
+        <img class="slide-show" src="images/5.jpg">
+    </div>
+    <style>
+        .slide{width: 500px; height: 300px; overflow: hidden; margin:auto;}
+    </style>
+    <script>
+        $(document).ready(function(){
+            //khai báo danh sách đường dẫn ảnh
+            arr_slide = new Array();
+            arr_slide[0] = "images/1.jpg";
+            arr_slide[1] = "images/2.jpg";
+            arr_slide[2] = "images/3.jpg";
+            arr_slide[3] = "images/4.jpg";
+            arr_slide[4] = "images/5.jpg";
+            //khai báo biến lưu vị trí ảnh
+            var n = 0;
+            setInterval(function(){
+                //thay đổi giá trị thuộc tính src của class=slide-show
+                $(".slide-show").fadeOut(function(){
+                    $(".slide-show").attr("src",arr_slide[n]);
+                    $(".slide-show").fadeIn();
+                    n++;
+                    //nếu n ở vị trí cuối của array thì reset n = 0
+                    if(n == arr_slide.length)
+                        n = 0;
+                });
+            },2000);
+        });
+    </script>
+</body>
+</html>

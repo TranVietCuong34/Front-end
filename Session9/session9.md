@@ -1,0 +1,30 @@
+- Jquery la thu vien cua javascript. Co nghia la no hoat dong dua tren ngon ngu javasript
+	- Jquey no se chua nhung ham de thuc hien cac hieu ung javascript
+- Mot so js framework: jquery, react js, angular js, vue js...
+- Trang chu jquery: http://jquery.com
+- Cu phap jquery
+	- Jquery co the tac dong vao the html thong qua thuoc tinh class, id, ten the cua the html
+		- Tac dong vao class: $(".tenclass").sukien(function(){});
+			- sukien
+				- click, dbclick, mouseover, mouseout, change, keypress...
+		- Tac dong vao id: $("#tenid").sukien(function(){});
+		- Mot so su kien tac dong vao the html
+			- $("#tenid/.tenclass").val(); -> lay gia tri cua the html
+			- $("#tenid/.tenclass").attr("ten thuoc tinh", "gia tri"); -> tac dong vao thuoc tinh cua the html
+			- $("#tenid/.tenclass").removeAttr("ten thuoc tinh"); -> loai bo thuoc tinh khoi the html
+			- $("#tenid/.tenclass").attr("ten thuoc tinh"); -> lay gia tri cua thuoc tinh the html
+			- $("#tenid/.tenclass").html(giatir); -> set gia tri vao the html
+			- $("#tenid/.tenclass").val(giaitri); -> set gia tri vao the form (input, select, checkbox...)
+			- $("#tenid/.tenclass").animate({top/right/bottom/left : 'donvido'}); -> tao hieu ung di chuyen the html tu vi tri ban dau den vi tri moi
+		- Mot so hieu ung anh (co the thuc hien cho cac the html khac)
+			- hide(); -> an the html
+				- hide(); -> mac dinh
+				- hide(callback); -> thuc hien xong thi se goi ham 
+				- hide(duration); -> thuc hien sau duration giay
+				- hide(duration, callback); -> thuc hien sau duration giay, goi ham
+			- show(); -> hien thi the html, cac tham so giong ham hide
+			- toggle(); -> tong hop cua hide, show. Tham so giong ham hide
+			- fadeOut(); -> anh mo dan roi mat di
+			- fadeIn(); anh sang dan roi hien thi
+			- fadeToogle(); tong hop cua fadeIn, fadeOut
+				- cac tham so cua fadeIn, fadeOut, fadeToogle giong ham hide
