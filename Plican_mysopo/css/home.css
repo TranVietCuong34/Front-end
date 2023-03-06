@@ -11,6 +11,7 @@ a{
 li{
     list-style: none;
 }
+/* header */
 header{
     background-color: #1b5191;
 }
@@ -94,7 +95,7 @@ header{
 }
 /* menu */
 .header-box2 .menu {
-    margin-left: 90px;
+    margin-left: 100px;
 }
 .list-menu ul{
     background-color: #fff;
@@ -158,10 +159,9 @@ header{
     width: 100%;
 
 }
-.header-box2-item button{
+.header-box2-item input[type="submit"]{
     background-color: #ffc000;
     color: #fff;
-    font-weight: 500;
     text-transform: uppercase;
     border-radius: 0px 4px 4px 0;
     font-size: 11px;
@@ -170,7 +170,9 @@ header{
     height: 38px;
     border: 1px solid #fff;
     margin-top: 5px;
-    margin-left: -80px;
+    margin-left: -79px;
+    cursor: pointer;
+    padding: 10px;
 }
 .header-box2-right ul{
     display: flex;
@@ -318,13 +320,13 @@ header{
     background-color: #f1f0f0;
     border-radius: 80px;
     position: absolute;
-    top: 50%;
-    left: 32%;
-    padding: 10px ;
+    top: 51%;
+    left: 30%;
+    padding: 5px ;
     display: none;
 }
 .product .icon-product i{
-    font-size: 18px;
+    font-size: 14px;
     color: #575454;
     padding: 5px 10px; 
     border-right: 1px solid #fff;
@@ -385,7 +387,7 @@ header{
     line-height:23.8px;
     align-items:center;
     display:flex;
-    margin-left: 80px;
+    margin-left:30px;
     padding: 20px 0;
 }
 .slide ul li:hover img {
@@ -517,7 +519,7 @@ footer{
 
 }
 .box-1-footer-img{
-    width: 10%;
+    width: 20%;
     margin: 50px 0;
 }
 .box-1-footer-img img{
@@ -527,10 +529,10 @@ footer{
     margin-top: 60px;
     margin-bottom: 50px;
     width: 40%;
-    margin-left: 300px;
+    margin-left: 150px;
 }
 .box-1-footer-right{
-    margin-left: 200px;
+    margin-left: 150px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
