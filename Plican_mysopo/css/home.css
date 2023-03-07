@@ -11,6 +11,17 @@ a{
 li{
     list-style: none;
 }
+.col{
+    padding: 0 12px;
+}
+.col-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+.col-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
 /* header */
 header{
     background-color: #1b5191;
@@ -264,7 +275,6 @@ header{
     display: flex;
 }
 .product .img-product{
-    width: 50%;
     border-left: 1px solid #ebebeb;
 
 }
@@ -276,8 +286,7 @@ header{
     display: flex;
     width: 100%;
 }
-.list-1-product li{
-    width: 50%;
+.list-1-product ul li{
     text-align: center;
     border: 1px solid #ebebeb;
     position: relative;
@@ -286,27 +295,34 @@ header{
 .item-product .item .img a img{
     margin-top: 40px;
 }
-.product .div-info p {
+.product .div-info .div-info-title p {
     margin: 5px 0;
     padding-top: 20px;
     padding-bottom: 5px;
     border-top: 1px solid #ebebeb;
-    margin-top: 60px;
+      
 
 }
-
-.product .item .div-info a{
+.product .item .div-info .div-info-title{
+    height: 110px;
+    
+}
+.product .item .div-info .div-info-title a{
     color: #2f2f33;
     font-weight: 700;
     line-height: 20px;
-    
+    /* overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 100%;
+    padding: 0 10px;
+    -webkit-line-clamp: 3; */
     
 }
 
-.price{
-    
+.price{ 
     margin-top: 10px;
-    margin-bottom: 60px;
 }
 .price .price-discount{
     color: #acacac;
@@ -325,7 +341,7 @@ header{
     background-color: #f1f0f0;
     border-radius: 80px;
     position: absolute;
-    top: 51%;
+    top: 48%;
     left: 30%;
     padding: 5px ;
     display: none;
@@ -355,7 +371,7 @@ header{
     display: flex;
     text-align: center;
 }
-.list-2-product li {
+.list-2-product ul li {
     width: 16.6667%;
     border: 1px solid #ebebeb;
     position: relative;
@@ -365,6 +381,7 @@ header{
     margin-top: 40px;
     border: 0;
 }
+.list-1-product  .price,
 .list-2-product .price {
     margin-bottom: 60px;
 }
