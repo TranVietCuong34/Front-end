@@ -285,6 +285,7 @@ header{
 .list-1-product .item-product{
     display: flex;
     width: 100%;
+    
 }
 .list-1-product ul li{
     text-align: center;
@@ -335,6 +336,23 @@ header{
     font-size: 15px;
     font-weight: 500px;
 }
+.list-1-product{
+    position: relative;
+}
+.list-1-product .item-product li:first-child::before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: none;
+        
+}
+.list-1-product .item-product li:first-child:hover::before {
+    display: block;
+    cursor: pointer;
+}
+
 
 .product .list-1-product .icon-product,
 .product .list-2-product .icon-product{
