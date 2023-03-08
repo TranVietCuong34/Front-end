@@ -15,7 +15,7 @@ header{
     background-color: #1b5191;
 }
 .header-box1{
-    margin: 0 250px;
+    margin: 0 160px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -61,7 +61,7 @@ header{
  }
 .header-box2-item{
     display: flex;
-    margin: 0 250px;
+    margin: 0 160px;
     padding: 20px 0;
     position: relative;
 
@@ -222,7 +222,7 @@ header{
 }
 .header-box3 ul{
      display: flex; 
-     margin: 0 250px;
+     margin: 0 160px;
 }
 .header-box3 ul li{
     padding: 20px 0;
@@ -258,7 +258,7 @@ header{
 }
 /* content-right */
 .content-cart{
-    margin: 30px 250px;
+    margin: 30px 160px;
 }
 .content-cart span{
     color: #323c3f;
@@ -391,7 +391,7 @@ footer{
 }
 .box-1-footer-info{
     display: flex;
-    margin: 0 250px;
+    margin: 0 160px;
 
 }
 .box-1-footer-img{
@@ -421,7 +421,7 @@ footer{
 .box-2-footer{
     display: flex;
     justify-content: space-between;
-    margin: 30px 250px;
+    margin: 30px 160px;
     border-bottom: 1px solid #fff;
     padding-right: 100px;
 }
@@ -468,7 +468,7 @@ footer{
     color: #ff0000;
 }
 .box-3-footer {
-    margin: 30px 250px;
+    margin: 30px 160px;
     color: #fff;
     display: flex;
 }
@@ -500,7 +500,7 @@ footer{
     color: #fff;
     padding: 20px 0;
     font-size: 14px;
-    margin: 0 250px;
+    margin: 0 160px;
 }
 .box-4-footer p a{
     color: #fff;
