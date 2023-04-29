@@ -5,103 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <style>
-        .login-page {
-  width: 360px;
-  padding: 8% 0 0;
-  margin: auto;
-}
-.form {
-  position: relative;
-  z-index: 1;
-  background: #FFFFFF;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-.form input {
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-.form button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: #2874d2;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
-  cursor: pointer;
-}
-.form button:hover,.form button:active,.form button:focus {
-  background: #5496e5;
-}
-.form .message {
-  margin: 15px 0 0;
-  color: #b3b3b3;
-  font-size: 12px;
-}
-.form .message a {
-  color: #2874d2;
-  text-decoration: none;
-}
-.form .register-form {
-  display: none;
-}
-.container {
-  position: relative;
-  z-index: 1;
-  max-width: 300px;
-  margin: 0 auto;
-}
-.container:before, .container:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.container .info {
-  margin: 50px auto;
-  text-align: center;
-}
-.container .info h1 {
-  margin: 0 0 15px;
-  padding: 0;
-  font-size: 36px;
-  font-weight: 300;
-  color: #1a1a1a;
-}
-.container .info span {
-  color: #4d4d4d;
-  font-size: 12px;
-}
-.container .info span a {
-  color: #000000;
-  text-decoration: none;
-}
-.container .info span .fa {
-  color: #EF3B3A;
-}
-body {
+  <header>
+    <div class="header-box1">
+        <div class="news-header">
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-book-bookmark"></i>Chính sách của Pelican Store
+                    </a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-regular fa-clock"></i>
+                        Tin khuyến mãi tháng 11
+                    </a>
+                    <img src="img/icon-hot-top.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="news-header">
+            <ul>
+                <li>
+                    <a href="">
+                        <p><img src="img/icon-speaker.jpg" alt=""> </p>
+                        Gửi phản hồi về sản phẩm
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><img src="img/icon-headphone.jpg" alt=""></span>
 
-  background: #2874d2;
-  font-family: "Roboto", sans-serif;
-}
-    </style>
+                        Hotline: 19006750
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-box2">
+        <div class="header-box2-item">
+            <a href="home.html"><img src="img/logo.png" alt=""></a>
+
+            <div class="menu">
+                <h3>Danh mục sản phẩm
+                    <div class="list-menu">
+                        <ul>
+                            <li>
+                                <a href="shop.html">
+                                    <img src="img/categories_icon_1.png" alt="">
+                                    Tất cả sản phẩm<i class="fa-solid fa-caret-right"></i> </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="">Điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Tablet</a>
+                                    </li>
+                                    <li><a href=""> Laptop</a>
+                                    </li>
+                                    <li><a href="">Tivi</a>
+                                    </li>
+                                    <li><a href="">Máy ảnh</a>
+                                    </li>
+                                    <li><a href="">Phụ kiện</a>
+                                    </li>
+                                </ul>
+
+
+                            </li>
+                            <li>
+                                <a href=""><img src="img/categories_icon_2.png" alt="">Sản phẩm mới</a>
+                            </li>
+                            <li><a href=""> <img src="img/categories_icon_3.png" alt="">Sản phẩm nổi bật</a>
+                            </li>
+                            <li><a href=""><img src="img/categories_icon_4.png" alt="">Sản phẩm khuyến mãi</a>
+                            </li>
+                            <li><a href=""><img src="img/categories_icon_5.png" alt="">Máy likenew</a>
+                            </li>
+                            <li><a href=""><img src="img/categories_icon_6.png" alt="">Máy cũ giá rẻ</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </h3>
+                <span><i class="fa-solid fa-align-right"></i></span>
+            </div>
+            <div class="search-header">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <input type="submit" name="" value="Tìm kiếm">
+
+            </div>
+
+            <div class="header-box2-right">
+                <ul>
+                    <li class="acc">
+                        <i class="fa-regular fa-user"></i>
+                        <a href="">Tài Khoản</a>
+                    </li>
+                    <li><a href=""><i class="fa-sharp fa-solid fa-bag-shopping"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</header>
     <div class="login-page">
         <div class="form">
           <form class="register-form">
@@ -112,8 +122,8 @@ body {
             <p class="message">Already registered? <a href="#">Sign In</a></p>
           </form>
           <form class="login-form">
-            <input type="text" placeholder="username"/>
-            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="Email"/>
+            <input type="password" placeholder="Mật Khẩu"/>
             <button>login</button>
             <div class="message">Not registered? 
                 <a href="#">Create an account</a>
@@ -121,5 +131,93 @@ body {
           </form>
         </div>
       </div>
+      <footer>
+        <div class="box-1-footer">
+            <div class="box-1-footer-info">
+                <div class="box-1-footer-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="box-1-footer-left">
+                    <p>Báo cáo Thương mại điện tử cho phép bạn phân tích hoạt động mua hàng trên trang web hoặc ứng dụng
+                        của mình. Bạn có thể xem thông tin về sản phẩm và giao dịch, giá trị đặt hàng trung bình, tỷ lệ
+                        chuyển đổi thương mại điện tử, thời gian mua hàng.</p>
+
+                </div>
+                <div class="box-1-footer-right">
+                    <ul>
+                        <li><a href="">19006750:</a><span> Tư vấn bán hàng</span></li>
+                        <li><a href="">19006750:</a><span> Khiếu nại, bảo hành</span></li>
+                        <li><span>Thời gian làm việc: 8h - 22h</span></li>
+                        <li> <span>Góp ý: </span><a href=""> support@sapo.vn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box-2-footer">
+            <ul>
+                <p>Thông tin</p>
+                <li>
+                    <a href="">Trang chủ</a>
+                    <a href="">Sản phẩm</a>
+                    <a href="">Blog</a>
+                    <a href="">Giới thiệu</a>
+                    <a href="">Liên hệ</a>
+                </li>
+            </ul>
+            <ul>
+                <p>hướng dẫn</p>
+                <li>
+                    <a href="">Trang chủ</a>
+                    <a href="">Sản phẩm</a>
+                    <a href="">Blog</a>
+                    <a href="">Giới thiệu</a>
+                    <a href="">Liên hệ</a>
+                </li>
+            </ul>
+            <ul>
+                <p>liên hệ</p>
+                <li>
+                    <a href="">Trang chủ</a>
+                    <a href="">Sản phẩm</a>
+                    <a href="">Blog</a>
+                    <a href="">Giới thiệu</a>
+                    <a href="">Liên hệ</a>
+                </li>
+            </ul>
+            <ul class="icon">
+                <p>liên kết</p>
+                <li>
+                    <a href=""><i class="fa-brands fa-facebook fb"></i></a>
+
+                    <a href=""> <i class="fa-brands fa-twitter twitter"></i> </a>
+                    <a href=""><i class="fa-brands fa-pinterest pinterest"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus google-plus"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube  youtube"></i></a>
+                </li>
+                <img src="img/box2-footer-banner.png" alt="">
+            </ul>
+        </div>
+        <div class="box-3-footer">
+            <ul>
+                <p>CÔNG TY CỔ PHẦN BÁN HÀNG VÀ DỊCH VỤ PELICAN</p>
+                <li>Trụ sở: Ladeco Building, 266 Doi Can Street, Ba Dinh District, Ha Noi</li>
+                <li>support@sapo.vn</li>
+                <li>19006750</li>
+                <li>Chịu trách nhiệm nội dung: Creativewithjoy</li>
+                <li>Copyright © 2017 Pelican Store. All Rights Reserved</li>
+            </ul>
+            <div class="plican">
+                <a href="">
+                    Plican
+                </a>
+            </div>
+
+        </div>
+        <div class="box-4-footer">
+            <p>@2018 Bản quyền thuộc về <a href="">plican</a> | Cung cấp bởi Sapo</p>
+        </div>
+    </footer>
 </body>
 </html>
